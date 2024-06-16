@@ -4,13 +4,14 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { useKeyboardControls, useGLTF, PointerLockControls } from "@react-three/drei";
 import * as THREE from "three";
 
+
 function GoCart() {
   const body = useRef();
   const model = useGLTF('./CrabFinal.glb');
   const { scene } = useGLTF('https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/cybertruck/model.gltf');
   console.log("model", model);
 
-  const [smoothedCameraPosition] = useState(() => new THREE.Vector3(0, 0, 0));
+  const [smoothedCameraPosition] = useState(() => new THREE.Vector3(0,0,0));
   const [smoothedCameraTarget] = useState(() => new THREE.Vector3());
 
   const [subscribeKeys, getKeys] = useKeyboardControls();
@@ -81,7 +82,8 @@ function GoCart() {
       cameraPosition.copy(bodyPosition);
 
       if (jump) {
-        cameraPosition.add(new THREE.Vector3(forwardVector.x * -0, 50, forwardVector.z *80));
+        // cameraPosition.add(new THREE.Vector3(forwardVector.x * 90, 10, forwardVector.z *30));
+        cameraPosition.add(new THREE.Vector3(forwardVector.x * 100, 100, forwardVector.z *120));
         
       } else {
         cameraPosition.add(new THREE.Vector3(-forwardVector.x * -25, 15, -forwardVector.z * 50));
@@ -91,11 +93,11 @@ function GoCart() {
       cameraTarget.copy(bodyPosition);
       cameraTarget.y += 1;
 
-      smoothedCameraPosition.lerp(cameraPosition, 5 *delta);
-      smoothedCameraTarget.lerp(cameraTarget, 5 * delta );
+      // smoothedCameraPosition.lerp(cameraPosition, 5 *delta);
+      // smoothedCameraTarget.lerp(cameraTarget, 5 * delta );
 
-      camera.position.copy(smoothedCameraPosition);
-      camera.lookAt(smoothedCameraTarget);
+      // camera.position.copy(smoothedCameraPosition);
+      // camera.lookAt(smoothedCameraTarget);
     }
   });
 

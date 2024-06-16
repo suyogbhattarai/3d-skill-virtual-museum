@@ -1,1 +1,114 @@
-{"accessors" : [{"bufferView" : 0, "byteOffset" : 0, "componentType" : 5125, "count" : 248268, "type" : "SCALAR", "max" : [248267], "min" : [0]}, {"bufferView" : 1, "byteOffset" : 0, "componentType" : 5126, "count" : 248268, "type" : "VEC3", "max" : [30753.01171875, 15672.572265625, -5.622747421264648], "min" : [-30970.861328125, -15636.86328125, -30059.17578125], "name" : "POSITION"}, {"bufferView" : 1, "byteOffset" : 12, "componentType" : 5126, "count" : 248268, "type" : "VEC3", "max" : [1.0000044107437134, 1.0000044107437134, 1.0000044107437134], "min" : [-1.0000044107437134, -1.0000044107437134, -1.0000044107437134], "name" : "NORMAL"}, {"bufferView" : 1, "byteOffset" : 24, "componentType" : 5126, "count" : 248268, "type" : "VEC2", "max" : [0.9919937252998352, 0.99199378490448], "min" : [0.008006229996681213, 0.010249078273773193], "name" : "TEXCOORD_0"}], "asset" : {"generator" : "Aspose.3D 24.2.0", "version" : "2.0"}, "buffers" : [{"uri" : "buffer.bin", "byteLength" : 8937656}], "bufferViews" : [{"buffer" : 0, "byteOffset" : 0, "byteLength" : 993072, "target" : 34963}, {"buffer" : 0, "byteOffset" : 993076, "byteLength" : 7944576, "byteStride" : 32, "target" : 34962}], "images" : [{"uri" : "/Users/yesidmartelo/Desktop/Blend process/Assets para renderizar/2023/Abril 2023/17 de Abril/large-display-tent-004/textures/large-display-tent-004-nrm-metalness-4k.png"}], "materials" : [{"name" : "large-display-tent-004", "pbrMetallicRoughness" : {"baseColorFactor" : [0.800000011920929, 0.800000011920929, 0.800000011920929, 1], "metallicFactor" : 1, "roughnessFactor" : 1}, "normalTexture" : {"index" : 0, "texCoord" : 0, "scale" : 1}, "emissiveFactor" : [0, 0, 0], "alphaMode" : "OPAQUE", "doubleSided" : false}], "meshes" : [{"primitives" : [{"attributes" : {"POSITION" : 1, "NORMAL" : 2, "TEXCOORD_0" : 3}, "indices" : 0, "material" : 0, "mode" : 4}], "name" : "tent-001"}], "nodes" : [{"matrix" : [1, 0, 0, 0, 0, 1, 1.8189893628882753E-14, 0, 0, -1.8189893628882753E-14, 1, 0, 0, 0, 0, 1], "mesh" : 0, "name" : "tent-001"}, {"children" : [0], "matrix" : [0.009999999776482582, 0, 0, 0, 0, -1.6292067591108198E-09, 0.009999999776482449, 0, 0, -0.009999999776482449, -1.6292067591108198E-09, 0, 0, 0, 0, 1], "name" : "large-display-tent-004"}], "samplers" : [{"magFilter" : 9729, "minFilter" : 9729, "wrapS" : 10497, "wrapT" : 10497}], "scene" : 0, "scenes" : [{"nodes" : [1]}], "textures" : [{"sampler" : 0, "source" : 0, "name" : "normalmap_texture"}]}
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5125,
+      "count": 248268,
+      "type": "SCALAR",
+      "max": [248267],
+      "min": [0]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 248268,
+      "type": "VEC3",
+      "max": [30753.01171875, 15672.572265625, -5.622747421264648],
+      "min": [-30970.861328125, -15636.86328125, -30059.17578125],
+      "name": "POSITION"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 248268,
+      "type": "VEC3",
+      "max": [1.0000044107437134, 1.0000044107437134, 1.0000044107437134],
+      "min": [-1.0000044107437134, -1.0000044107437134, -1.0000044107437134],
+      "name": "NORMAL"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 24,
+      "componentType": 5126,
+      "count": 248268,
+      "type": "VEC2",
+      "max": [0.9919937252998352, 0.99199378490448],
+      "min": [0.008006229996681213, 0.010249078273773193],
+      "name": "TEXCOORD_0"
+    }
+  ],
+  "asset": { "generator": "Aspose.3D 24.2.0", "version": "2.0" },
+  "buffers": [{ "uri": "buffer.bin", "byteLength": 8937656 }],
+  "bufferViews": [
+    { "buffer": 0, "byteOffset": 0, "byteLength": 993072, "target": 34963 },
+    {
+      "buffer": 0,
+      "byteOffset": 993076,
+      "byteLength": 7944576,
+      "byteStride": 32,
+      "target": 34962
+    }
+  ],
+  "images": [
+    {
+      "uri": "/Users/yesidmartelo/Desktop/Blend process/Assets para renderizar/2023/Abril 2023/17 de Abril/large-display-tent-004/textures/large-display-tent-004-nrm-metalness-4k.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "large-display-tent-004",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929, 0.800000011920929, 0.800000011920929, 1
+        ],
+        "metallicFactor": 1,
+        "roughnessFactor": 1
+      },
+      "normalTexture": { "index": 0, "texCoord": 0, "scale": 1 },
+      "emissiveFactor": [0, 0, 0],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": { "POSITION": 1, "NORMAL": 2, "TEXCOORD_0": 3 },
+          "indices": 0,
+          "material": 0,
+          "mode": 4
+        }
+      ],
+      "name": "tent-001"
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        1, 0, 0, 0, 0, 1, 1.8189893628882753e-14, 0, 0, -1.8189893628882753e-14,
+        1, 0, 0, 0, 0, 1
+      ],
+      "mesh": 0,
+      "name": "tent-001"
+    },
+    {
+      "children": [0],
+      "matrix": [
+        0.009999999776482582, 0, 0, 0, 0, -1.6292067591108198e-9,
+        0.009999999776482449, 0, 0, -0.009999999776482449,
+        -1.6292067591108198e-9, 0, 0, 0, 0, 1
+      ],
+      "name": "large-display-tent-004"
+    }
+  ],
+  "samplers": [
+    { "magFilter": 9729, "minFilter": 9729, "wrapS": 10497, "wrapT": 10497 }
+  ],
+  "scene": 0,
+  "scenes": [{ "nodes": [1] }],
+  "textures": [{ "sampler": 0, "source": 0, "name": "normalmap_texture" }]
+}
