@@ -7,6 +7,10 @@ import Piano from '../Piano/Piano';
 import { Sky,Html,Float,PresentationControls } from '@react-three/drei';
 import Crab from '../Crab/Crab';
 import {useGLTF} from "@react-three/drei"
+import { GasStation } from '../GasStation/GasStation';
+import Road from '../Road/Road';
+
+
 
 
 
@@ -50,7 +54,8 @@ wallTextures.roughnessMap.repeat.set(5, 1);
 
     const wallGeometry=new THREE.BoxGeometry(500,60,0.2)
     const wallgeometrySide=new THREE.BoxGeometry(0.2,60,500)
-    const glass=useGLTF('./GlassPannel.glb')
+    const wallgeometryGateSide=new THREE.BoxGeometry(0.2,60,200)
+   
     
   return (
     <>
@@ -59,7 +64,7 @@ wallTextures.roughnessMap.repeat.set(5, 1);
     {/* <Sky/> */}
     <RigidBody type='fixed'  restitution={0.2} friction={1}>
         <mesh  rotation-x={-Math.PI*0.5} position={[0,-0.5,0]}>
-            <boxGeometry args={[500,500,0.2,20,20]}/>
+            <boxGeometry args={[1000,1000,0.2,20,20]}/>
             <meshStandardMaterial {...terrainTextures}  />
             <CuboidCollider args={[250,250,0.1]} position={[0,-16 ,0]}
          restitution={0.2}
@@ -72,19 +77,63 @@ wallTextures.roughnessMap.repeat.set(5, 1);
         {/* <Html>
           <iframe src=''/>
         </Html> */}
-        <mesh geometry={wallGeometry} position={[0,4,250.1,100,100]} >
-          <meshStandardMaterial {...wallTextures}  />
-      </mesh>
+          <mesh geometry={wallGeometry} position={[0,4,250.1,100,100]} >
+            <meshStandardMaterial {...wallTextures}  />
+        </mesh>
       <mesh geometry={wallgeometrySide} position={[-250,4,0,100,100]} >
           <meshStandardMaterial {...wallTextures}  />
       </mesh>
-      <mesh geometry={wallgeometrySide} position={[250,4,0,100,100]} >
+      <mesh geometry={wallgeometryGateSide} position={[250,4,-150.8,100,100]} >
+          <meshStandardMaterial {...wallTextures}   />
+      </mesh>
+      <mesh geometry={wallgeometryGateSide} position={[250,4,150.8,100,100]} >
           <meshStandardMaterial {...wallTextures}   />
       </mesh>
 
+      <Text rotation-y={THREE.MathUtils.degToRad(90)}position={[250.5,17,-145.1]} width={100} font="/text/Montserrat-Bold.ttf" scale={200}>
+         ING Skill Museum 
+        </Text>
+
       <Crab/>
+      <Road position={[ 127, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ 80, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ -7, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ -94.3, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ -94.3, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ -180.3, -1.9,  -192.7 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)}/> 
+      <Road position={[ -238.3, -1.1,  -183 ]} scale={7}  />  
+      <Road position={[ -238.3, -1.1,  -183 ]} scale={7}  />  
+      <Road position={[ -238.3, -1.1,  -123 ]} scale={7}  /> 
+      <Road position={[ -238.3, -1.5,  -62 ]} scale={7}  /> 
+      <Road position={[ -20.3, -1.1,  128.7 ]} scale={7} rotation-y={THREE.MathUtils.degToRad(90)}  /> 
+      <Road position={[ -72.3, -1.1,  128.7 ]} scale={7} rotation-y={THREE.MathUtils.degToRad(90)}  /> 
+      <Road position={[ -133.3, -1.1,   128.7 ]} scale={7} rotation-y={THREE.MathUtils.degToRad(90)}  /> 
+       <Road position={[ -193.3, -1.1,   128.7 ]} scale={7} rotation-y={THREE.MathUtils.degToRad(90)}  /> 
+      <Road position={[ -238.3, -1.1,  112.7 ]} scale={7}  /> 
+      <Road position={[ -238.3, -1.1,  60 ]} scale={7}  /> 
+      <Road position={[ -238.3, -1.1,  -1.2 ]} scale={7}  />  
+      <Road position={[ -191, -1.3,  -16.2 ]} scale={7.5} rotation-y={THREE.MathUtils.degToRad(90)} />  
+      <Road position={[ -191, -1.3,  -16.2 ]} scale={7.5} rotation-y={THREE.MathUtils.degToRad(90)} />  
+      <Road position={[ -126, -1.3,  -16.2 ]} scale={7.5} rotation-y={THREE.MathUtils.degToRad(90)} />  
+      <Road position={[ -61, -1.3,  -16.2 ]} scale={7.5} rotation-y={THREE.MathUtils.degToRad(90)} />  
+            <Road position={[ -9.3, -2,  99.2 ]} scale={10}  />  
+            <Road position={[ -9.3, -2,  11.9 ]} scale={10}  />  
+      <Road position={[ 55, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />  
+      <Road position={[ 108.9, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />   
+      <Road position={[ 150, -2,  -140.2 ]} scale={10}  />  
+      <Road position={[ 150, -2,  -75.2 ]} scale={10}  />  
+      <Road position={[ 195.7, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />    
+      <Road position={[ 282.8, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />    
+      <Road position={[ 370, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />
+      <Road position={[ 456, -2,  -11 ]} scale={10} rotation-y={THREE.MathUtils.degToRad(90)} />
+   
+    
+ 
       </RigidBody>
       <Piano/>
+
+      <GasStation/>
+     
       {/* <Float floatIntensity={0.2}>
       <Text width={20} rotation-y={-110} scale={500} position={[-30,700,0]}>
       Welcome To Skill Museum

@@ -2,6 +2,8 @@ import React from 'react'
 import {Canvas} from "@react-three/fiber"
 import Experience from './Experience/Experience'
 import { KeyboardControls, OrbitControls } from '@react-three/drei'
+import "./App.css"
+import HomePage from './HomePage/HomePage'
 
 
 
@@ -9,8 +11,6 @@ import { KeyboardControls, OrbitControls } from '@react-three/drei'
 function App() {
   return (
     <>
-  
- 
     <KeyboardControls
     map={[
     {name:"forward",keys:['ArrowUp','KeyW']},
@@ -20,14 +20,10 @@ function App() {
     {name:"jump",keys:['Space','KeyB']}
     ]}
     >
-      
     <Canvas shadows>
-    <OrbitControls makeDefault/>
       <Experience/>
     </Canvas>
     </KeyboardControls>
-
-    
     </>
   )
 }

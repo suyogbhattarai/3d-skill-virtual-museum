@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sparkles,OrbitControls,Environment, PresentationControls } from '@react-three/drei'
+import { Sparkles,OrbitControls,Environment, PresentationControls ,ScrollControls} from '@react-three/drei'
 import{Physics,Debug} from "@react-three/rapier"
 import Lights from '../Lights/Lights'
 import Museum from '../Museum/Museum'
@@ -22,21 +22,23 @@ function Experience() {
    
 
   
-        {/* <OrbitControls makeDefault/> */}
+         <OrbitControls makeDefault/>
         <PresentationControls/>
         <Sparkles 
             size={150}
-            scale={[1000,1000]}
+            scale={[1500,1500]}
             position-y={500}
             speed={3}
-            count={5000}
+            count={3500}
             />
         <Physics>
         <Debug/>
 
             <Lights/>
             <Museum/>
+            <ScrollControls pages={3} damping={0.5}>
             <GoCart/>
+            </ScrollControls>
 
        
          
