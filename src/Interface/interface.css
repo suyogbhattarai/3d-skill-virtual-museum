@@ -1,0 +1,85 @@
+.interface{
+ 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  
+  .command{
+    position:absolute;
+    bottom:2%;
+    left:1%;
+    width: 300px;
+    display: inline-block;
+    color:#ffffff;
+
+    font-weight: 1000;
+    font-size:2.5vh;
+  }
+
+  .command p{
+    margin: 0px;
+    width: 100px;
+  }
+
+
+  .command h3{
+    padding: 0px;
+    margin-bottom: -10px;
+  }
+  
+  .intro{
+  
+    position:absolute;
+    bottom:0%;
+    left:0%;
+    background-color: rgb(31, 29, 29);
+    display: inline-block;
+  height: 100vh;
+  width: 400px;
+    color:#ffffff;
+    padding: 10px 20px;
+    border-radius: 0px 0px 0px 0px;
+  
+  
+  }
+
+  .intro .logo{
+    background-color: white;
+    width: 200px;
+    margin: 30px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 254, 254);
+  }
+
+  .intro .logo img{
+    width: 200px;
+   
+  }
+  
+  .intro h1{
+    font-size: 30px;
+    padding: 0px;
+  }
+
+  .intro button{
+        background-color: #1dd604;
+        color: white;
+       border-radius: 20px;
+       border: none;
+       padding: 10px; 
+       font-size: 15px;
+       margin-top: 20px;
+       margin-bottom:10px ;
+  }
+  .intro button:hover{
+    background-color: transparent;
+    color: white;
+   border-radius: 20px;
+   border: 1px solid white;
+   padding: 10px; 
+   margin-bottom:10px ;
+   cursor: pointer;
+  }

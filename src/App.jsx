@@ -1,16 +1,23 @@
-import React from 'react'
+import React,{Suspense} from 'react'
 import {Canvas} from "@react-three/fiber"
 import Experience from './Experience/Experience'
-import { KeyboardControls, OrbitControls } from '@react-three/drei'
+import { KeyboardControls, OrbitControls, } from '@react-three/drei'
 import "./App.css"
 import HomePage from './HomePage/HomePage'
+import Interface from './Interface/Interface'
+import { useState } from 'react'
+import LoadingScreen from './LoadingScreen.jsx/LoadingScreen'
+
 
 
 
 
 function App() {
+  const [startTour,setStartTour]=useState(false);
+
   return (
     <>
+
     <KeyboardControls
     map={[
     {name:"forward",keys:['ArrowUp','KeyW']},
@@ -20,9 +27,13 @@ function App() {
     {name:"jump",keys:['Space','KeyB']}
     ]}
     >
-    <Canvas shadows>
-      <Experience/>
+<Suspense fallback={<LoadingScreen/>}>
+<Canvas shadows>
+      <Experience startTour={startTour} setStartTour={setStartTour} />
     </Canvas>
+    <Interface startTour={startTour} setStartTour={setStartTour}  />
+</Suspense>
+  
     </KeyboardControls>
     </>
   )

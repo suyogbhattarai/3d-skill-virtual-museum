@@ -1,0 +1,161 @@
+.interface-guide{
+    /* position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; */
+
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+    
+  
+  }
+
+  
+  .tip1{
+    background-color: black;
+    color: white;
+    width: 300px;
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    padding: 20px 20px;
+    transform: translate(-190%,-120%);
+    
+  }
+
+  .tip1 h2{
+
+    margin-top: 0px;
+    margin-bottom: -5px;
+    font-size: 20px;
+  }
+  .tip1 p{
+    font-size: 15px;
+  }
+
+  .tip1 button{
+    background-color: #1dd604;
+    color: white;
+   border-radius: 20px;
+   border: none;
+   padding: 10px; 
+   width: 70px;
+   margin-bottom:0px ;
+   margin-top: -20px;
+  }
+
+  .tip1 .direction{
+    width: 100px;
+  }
+
+  .tip1 button:hover{
+    background-color: transparent;
+    color: white;
+   border-radius: 20px;
+   border: 1px solid white;
+   padding: 10px; 
+   margin-bottom:10px ;
+   cursor: pointer;
+  }
+
+  
+  .tip2{
+    background-color: black;
+    color: white;
+    width: 300px;
+    position: absolute;
+    transform: translate(-190%,-110%);
+    top: 0%;
+    left: 50%;
+    padding: 20px 20px;
+  }
+
+  .tip2 h2{
+
+    margin-top: 0px;
+    margin-bottom: -5px;
+  }
+
+  .tip2 button{
+    background-color: #1dd604;
+    color: white;
+   border-radius: 20px;
+   border: none;
+   padding: 10px; 
+   width: 70px;
+   margin-bottom:0px ;
+  }
+
+  .tip2 button:hover{
+    background-color: transparent;
+    color: white;
+   border-radius: 20px;
+   border: 1px solid white;
+   padding: 10px; 
+   margin-bottom:10px ;
+   cursor: pointer;
+  }
+
+  .tip3 {
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .tip3 h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .fuel-gauge {
+    width: 100%;
+    height: 20px; /* Height of the gauge bar */
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .fuel-level {
+    width: 0;
+    height: 100%;
+    background-color: #4caf50; /* Green color for full gauge */
+    animation: fillTank 4s ease-out forwards; /* Animation properties */
+  }
+  
+  @keyframes fillTank {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .tip3 p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .tip3 button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tip3 button:hover {
+    background-color: #45a049;
+  }
+  
